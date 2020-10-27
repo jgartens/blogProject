@@ -10,11 +10,17 @@
 </head>
 
 <body>
-    <h1>Thank you for your submission</h1>
-    <p th:text="${title}" />
-    <p th:text="${author}" />
-    <p th:text="${blogEntry}" />
+    <div class="container">
+        <h1>Thank you for your submission</h1>
+        <p th:text="${title}" />
+        <p th:text="${author}" />
+        <p th:text="${blogEntry}" />
 
+        <a th:href="@{/}">
+            <button class="btn btn-success">HOME</button>
+        </a>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
